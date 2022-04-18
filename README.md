@@ -1,4 +1,4 @@
-# MixCycle
+# Unsupervised Source Separation via Self-Supervised Training
 The audio samples and the source code that accompany the paper: [Unsupervised Source Separation via Self-Supervised Training](https://arxiv.org/abs/2202.03875).
 
 ## Audio samples
