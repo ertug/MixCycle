@@ -2,9 +2,37 @@
 The audio samples and source code that accompany the paper: [Unsupervised Source Separation via Self-Supervised Training](https://arxiv.org/abs/2202.03875).
 
 ## Audio samples
-Audio samples to demonstrate our results (MixCycle) on two different datasets: [LibriMix](https://nbviewer.org/github/ertug/MixCycle/blob/main/notebooks/AudioSamples-LibriMix.ipynb) and [REAL-M](https://nbviewer.org/github/ertug/MixCycle/blob/main/notebooks/AudioSamples-REAL-M.ipynb).
+We provide audio samples to demonstrate the results of the MixCycle method on two different datasets: [LibriMix](https://nbviewer.org/github/ertug/MixCycle/blob/main/notebooks/AudioSamples-LibriMix.ipynb) and [REAL-M](https://nbviewer.org/github/ertug/MixCycle/blob/main/notebooks/AudioSamples-REAL-M.ipynb).
 
-Audio samples from the baseline methods on LibriMix: [PIT-DM](https://nbviewer.org/github/ertug/MixCycle/blob/main/notebooks/AudioSamples-LibriMix-PIT-DM.ipynb) and [MixIT](https://nbviewer.org/github/ertug/MixCycle/blob/main/notebooks/AudioSamples-LibriMix-MixIT.ipynb).
+We also provide audio samples from the baseline methods on LibriMix: [PIT-DM](https://nbviewer.org/github/ertug/MixCycle/blob/main/notebooks/AudioSamples-LibriMix-PIT-DM.ipynb) and [MixIT](https://nbviewer.org/github/ertug/MixCycle/blob/main/notebooks/AudioSamples-LibriMix-MixIT.ipynb).
 
 ## Source code
-We will publish the source code here for reproducibility of our experiments.
+We provide the source code under the `src` directory for reproducibility.
+
+## Running the experiments
+
+### Create the environment
+
+Install [Anaconda](https://www.anaconda.com/products/individual) and run the following command:
+```
+$ conda env create -f environment.yml
+```
+See [more info](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) on how to manage conda environments.
+
+### Activate the environment
+```
+$ conda activate mixcycle
+```
+
+### Run the experiments
+```
+$ cd src
+$ python experiment.py --librimix-root ~/datasets/librimix --exp-root ~/experiments --run librimix_irm
+$ python experiment.py --librimix-root ~/datasets/librimix --exp-root ~/experiments --run model_comparison_librimix
+$ python experiment.py --librimix-root ~/datasets/librimix --realm-root ~/datasets/REAL-M-v0.1.0 --exp-root ~/experiments --run realm
+```
+
+Optionally, you can monitor the training process with TensorBoard by running:
+```
+$ tensorboard --logdir experiments
+```
