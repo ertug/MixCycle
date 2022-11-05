@@ -79,7 +79,7 @@ class Experiment:
         initialized_model = Training(
             train_results_root=os.path.join(self.config.experiments_root, 'librimix_100p'),
             librimix_root=True,
-            model_name='mixpit',
+            model_name='mixcycle',
             mixcycle_init_epochs=50,
             train_subsample_ratio=1.0,
             eval_epochs=1

@@ -28,7 +28,8 @@ $ conda activate mixcycle
 ```
 $ cd src
 $ python experiment.py --librimix-root ~/datasets/librimix --exp-root ~/experiments --run librimix_irm
-$ python experiment.py --librimix-root ~/datasets/librimix --exp-root ~/experiments --run model_comparison_librimix
+$ python experiment.py --librimix-root ~/datasets/librimix --exp-root ~/experiments --run librimix_5p
+$ python experiment.py --librimix-root ~/datasets/librimix --exp-root ~/experiments --run librimix_100p
 $ python experiment.py --librimix-root ~/datasets/librimix --realm-root ~/datasets/REAL-M-v0.1.0 --exp-root ~/experiments --run realm
 ```
 

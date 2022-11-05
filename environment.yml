@@ -1,0 +1,12 @@
+name: mixcycle
+channels:
+  - defaults
+dependencies:
+  - python=3.9.7
+  - pytorch::pytorch=1.12.1
+  - pytorch::torchaudio=0.12.1
+  - cudatoolkit=10.2
+  - tqdm=4.62.3
+  - conda-forge::tensorboard=2.7.0
+  - conda-forge::jupyterlab=3.2.5
+  - conda-forge::ipywidgets=7.6.5
