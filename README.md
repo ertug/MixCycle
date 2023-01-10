@@ -1,5 +1,5 @@
-# Unsupervised Source Separation via Self-Supervised Training
-The audio samples and source code that accompany the paper: [Unsupervised Source Separation via Self-Supervised Training](https://arxiv.org/abs/2202.03875).
+# MixCycle: Unsupervised Speech Separation via Cyclic Mixture Permutation Invariant Training
+This repository contains the audio samples and the source code that accompany [the paper](https://arxiv.org/abs/2202.03875).
 
 ## Audio samples
 We provide audio samples to demonstrate the results of the MixCycle method on two different datasets: [LibriMix](https://nbviewer.org/github/ertug/MixCycle/blob/main/notebooks/AudioSamples-LibriMix.ipynb) and [REAL-M](https://nbviewer.org/github/ertug/MixCycle/blob/main/notebooks/AudioSamples-REAL-M.ipynb).
@@ -38,4 +38,20 @@ $ python experiment.py --librimix-root ~/datasets/librimix --realm-root ~/datase
 Optionally, you can monitor the training process with TensorBoard by running:
 ```
 $ tensorboard --logdir experiments
+```
+
+## Citation (BibTeX)
+If you find this repository useful, please cite our work:
+
+```BibTeX
+@article{karamatli2022unsupervised,
+  title={MixCycle: Unsupervised Speech Separation via Cyclic Mixture Permutation Invariant Training},
+  author={Karamatl{\i}, Ertu{\u{g}} and K{\i}rb{\i}z, Serap},
+  journal={IEEE Signal Processing Letters},
+  volume={29},
+  number={},
+  pages={2637-2641},
+  year={2022},
+  doi={10.1109/LSP.2022.3232276}
+}
 ```
