@@ -13,6 +13,10 @@ We provide the source code under the `src` directory for reproducibility.
 
 ## Running the experiments
 
+### Datasets
+- LibriMix: [GitHub](https://github.com/JorisCos/LibriMix)
+- REAL-M: [Download](https://sourceseparationresearch.com/static/REAL-M-v0.1.0.tar.gz)
+
 ### Create the environment
 
 Install [Anaconda](https://www.anaconda.com/products/individual) and run the following command:
